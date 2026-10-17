@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1ACDC7833070D4FF00689818 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDC7813070D4FF00689818 /* RemoteView.swift */; };
+		1ACDC7843070D4FF00689818 /* RemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDC7803070D4FF00689818 /* RemoteController.swift */; };
+		1ACDC7853070D4FF00689818 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDC7823070D4FF00689818 /* TokenStore.swift */; };
+		1ACDC7883070D53900689818 /* TVRemoteProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACDC7873070D53900689818 /* TVRemoteProtocol */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1A5069AF3070CD9E00976008 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +34,28 @@
 		1A50699E3070CD9C00976008 /* TVRemoteiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5069AE3070CD9E00976008 /* TVRemoteiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5069B83070CD9E00976008 /* TVRemoteiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5069CB3070CE0B00976008 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		1ACDC7803070D4FF00689818 /* RemoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteController.swift; sourceTree = "<group>"; };
+		1ACDC7813070D4FF00689818 /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
+		1ACDC7823070D4FF00689818 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1ACDC77F3070D3BF00689818 /* Exceptions for "TVRemoteiOS" folder in "TVRemoteiOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1A50699D3070CD9C00976008 /* TVRemoteiOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1A5069A03070CD9C00976008 /* TVRemoteiOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1ACDC77F3070D3BF00689818 /* Exceptions for "TVRemoteiOS" folder in "TVRemoteiOS" target */,
+			);
 			path = TVRemoteiOS;
 			sourceTree = "<group>";
 		};
@@ -52,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACDC7883070D53900689818 /* TVRemoteProtocol in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,11 @@
 				1A5069B13070CD9E00976008 /* TVRemoteiOSTests */,
 				1A5069BB3070CD9E00976008 /* TVRemoteiOSUITests */,
 				1A50699F3070CD9C00976008 /* Products */,
+				1A5069CB3070CE0B00976008 /* Package.swift */,
+				1ACDC7803070D4FF00689818 /* RemoteController.swift */,
+				1ACDC7813070D4FF00689818 /* RemoteView.swift */,
+				1ACDC7823070D4FF00689818 /* TokenStore.swift */,
+				1ACDC7863070D53900689818 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +120,13 @@
 				1A5069B83070CD9E00976008 /* TVRemoteiOSUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1ACDC7863070D53900689818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +149,7 @@
 			);
 			name = TVRemoteiOS;
 			packageProductDependencies = (
+				1ACDC7873070D53900689818 /* TVRemoteProtocol */,
 			);
 			productName = TVRemoteiOS;
 			productReference = 1A50699E3070CD9C00976008 /* TVRemoteiOS.app */;
@@ -195,6 +233,9 @@
 			);
 			mainGroup = 1A5069953070CD9C00976008;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A5069CD3070CF3A00976008 /* XCLocalSwiftPackageReference "../../../../tv-controller" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A50699F3070CD9C00976008 /* Products */;
 			projectDirPath = "";
@@ -236,6 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACDC7833070D4FF00689818 /* RemoteView.swift in Sources */,
+				1ACDC7843070D4FF00689818 /* RemoteController.swift in Sources */,
+				1ACDC7853070D4FF00689818 /* TokenStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +440,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TVRemoteiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G9EQ3UECJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TVRemoteiOS/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "TV Remote Controller";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,8 +471,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TVRemoteiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G9EQ3UECJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TVRemoteiOS/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "TV Remote Controller";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +602,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1A5069CD3070CF3A00976008 /* XCLocalSwiftPackageReference "../../../../tv-controller" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../../tv-controller";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ACDC7873070D53900689818 /* TVRemoteProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A5069CD3070CF3A00976008 /* XCLocalSwiftPackageReference "../../../../tv-controller" */;
+			productName = TVRemoteProtocol;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A5069963070CD9C00976008 /* Project object */;
 }

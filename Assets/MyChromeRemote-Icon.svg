@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="205 145 550 550" role="img" aria-label="MyChromeRemote icon">
+  <defs>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="28%" stop-color="#d7dce4"/>
+      <stop offset="52%" stop-color="#828b99"/>
+      <stop offset="74%" stop-color="#eef1f6"/>
+      <stop offset="100%" stop-color="#59616e"/>
+    </linearGradient>
+    <linearGradient id="silverSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa"/>
+      <stop offset="55%" stop-color="#aeb6c2"/>
+      <stop offset="100%" stop-color="#6e7683"/>
+    </linearGradient>
+    <radialGradient id="disc" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#33373f"/>
+      <stop offset="55%" stop-color="#101215"/>
+      <stop offset="100%" stop-color="#030304"/>
+    </radialGradient>
+    <filter id="playShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="markShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="205" y="145" width="550" height="550" fill="#000000"/>
+<!-- ===== Mark ===== -->
+  <g filter="url(#markShadow)">
+    <!-- three equal metallic ring segments (chrome-inspired, monochrome) -->
+    <g fill="none" stroke-width="48" stroke-linecap="butt">
+      <path d="M 300 285 A 225 225 0 0 1 660 285" stroke="#eef1f6"/>
+      <path d="M 687 332 A 225 225 0 0 1 507 643" stroke="#a7b0bd"/>
+      <path d="M 453 643 A 225 225 0 0 1 273 332" stroke="#767f8c"/>
+    </g>
+
+    <!-- inner black disc -->
+    <circle cx="480" cy="420" r="196" fill="url(#disc)"/>
+    <circle cx="480" cy="420" r="196" fill="none" stroke="url(#silver)" stroke-width="5"/>
+    <circle cx="480" cy="420" r="172" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
+
+    <!-- remote power dot at top of disc -->
+    <circle cx="480" cy="276" r="11" fill="url(#silverSoft)"/>
+
+    <!-- play button -->
+    <path d="M 428 318 L 428 522 Q 428 536 441 528 L 604 434 Q 616 427 604 419 L 441 311 Q 428 303 428 318 Z"
+          fill="url(#silver)" filter="url(#playShadow)"/>
+  </g>
+
+  </svg>

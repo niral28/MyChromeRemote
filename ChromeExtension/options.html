@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TV Remote Bridge</title>
+    <style>
+      body { font: 16px system-ui; max-width: 34rem; padding: 2rem; }
+    </style>
+  </head>
+  <body>
+    <img src="icons/icon128.png" alt="MyChromeRemote logo" width="96" height="96" style="border-radius: 20px">
+    <h1>MyChromeRemote Bridge</h1>
+    <p>This extension pairs automatically with the TV Remote app running on this Mac. There is no code to enter.</p>
+    <p id="status">Checking status…</p>
+    <p>If it does not connect, make sure TV Remote is open on this Mac, then reload this extension from <code>chrome://extensions</code>.</p>
+    <p><button id="reset">Forget pairing and re-pair</button></p>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+# Build artifacts
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Packaged Mac app (built from Sources/TVRemoteMac)
+TVRemote.app/
+
+# OS / editor noise
+.DS_Store
